@@ -98,4 +98,4 @@ docker-compose -f /home/ec2-user/docker-compose.yaml up -d
 - Criar o **RDS** selecionando o banco MySQL no modelo de nível gratuito, escolher as credenciais, selecionar a VPC e o grupo de segurança SQL, deixar a zona de disponibilidade sem preferência.
 - Criar o **Grupo de Destino** para instâncias, com protocolo HTTP e porta 8080, tipo de endereço IP IPv4, escolher a VPC criada, e realizar o registro das instâncias.
 - Criar os **Modelos de Execução** com as mesmas configurações das instâncias.
-- Criar o **Autoscaling** e selecionar o Modelo de Execução de acordo com cada zona de disponibilidade, selecionar o Load Balancer já criado.
+- Criar o **Autoscaling** e selecionar o Modelo de Execução de acordo com cada zona de disponibilidade, em versão selecionar Latest, selecionar o Load Balancer já criado.
